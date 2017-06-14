@@ -3,7 +3,7 @@
 ## Setup
 ```bash
 git init --bare $HOME/.dotfiles
-mydotfiles remote add origin git@github.com:Siilwyn/dotfiles.git
+mydotfiles remote add origin git@github.com:shadyabhi/dotfiles.git
 ```
 
 ## Configuration
@@ -22,7 +22,7 @@ mydotfiles push
 
 ## Replication
 ```bash
-git clone --separate-git-dir=$HOME/.dotfiles https://github.com/Siilwyn/dotfiles.git dotfiles-tmp
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/shadyabhi/dotfiles.git dotfiles-tmp
 rsync --recursive --verbose --exclude '.git' dotfiles-tmp/ $HOME/
 rm --recursive dotfiles-tmp
 ```

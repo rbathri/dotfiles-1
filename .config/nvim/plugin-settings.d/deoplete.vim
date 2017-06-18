@@ -9,10 +9,16 @@ let g:deoplete#sources#go#package_dot = 1
 let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 let g:deoplete#sources#go#pointer = 1
 let g:deoplete#sources#go#use_cache = 1
-let g:deoplete#sources#go#json_directory = '~/.cache/deoplete/go/cache'
+if system('uname -s') == "Darwin\n"
+	let g:deoplete#sources#go#json_directory = '/Users/arastogi/cache/deoplete/go/cache'
+else
+	let g:deoplete#sources#go#json_directory = '/home/arastogi/.cache/deoplete/go/cache'
+endif
+
 
 " Python stuff
-let g:python3_host_prog  = '/export/apps/python/3.5/bin/python'
+" Make sure neovim & jedi module is installed ona ll these locations
+let g:python3_host_prog  = '/export/apps/python/3.5/bin/python3'
 let g:python_host_prog  = '/export/apps/python/2.7/bin/python'
 let g:deoplete#sources#jedi#python_path = '/export/apps/python/2.7/bin/python'
 

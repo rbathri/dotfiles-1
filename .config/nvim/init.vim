@@ -26,6 +26,9 @@ if dein#load_state('~/.config/nvim/dein')
 
   " call dein#add('xolox/vim-easytags')
 
+  " Json
+  call dein#add('elzr/vim-json')
+
   " Generic
   call dein#add('wincent/ferret')
   call dein#add('scrooloose/nerdtree')

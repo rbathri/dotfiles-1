@@ -18,6 +18,11 @@ endif
 
 " Python stuff
 " Make sure neovim & jedi module is installed ona ll these locations
+" wget https://bootstrap.pypa.io/get-pip.py
+" sudo /export/apps/python/2.7/bin/python ~/get-pip.py
+" sudo /export/apps/python/3.5/bin/python3 ~/get-pip.py
+" sudo /export/apps/python/3.5/bin/pip install neovim
+" sudo /export/apps/python/2.7/bin/pip install neovim
 let g:python3_host_prog  = '/export/apps/python/3.5/bin/python3'
 let g:python_host_prog  = '/export/apps/python/2.7/bin/python'
 let g:deoplete#sources#jedi#python_path = '/export/apps/python/2.7/bin/python'

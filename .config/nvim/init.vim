@@ -21,10 +21,6 @@ if dein#load_state('~/.config/nvim/dein')
   " Syntax highlighting and autocomplete
   call dein#add('neomake/neomake')
   call dein#add('Shougo/deoplete.nvim')
-  " call dein#add('idbrii/AsyncCommand')
-  " call dein#add('vim-syntastic/syntastic')
-
-  " call dein#add('xolox/vim-easytags')
 
   " Json
   call dein#add('elzr/vim-json')
@@ -46,7 +42,10 @@ if dein#load_state('~/.config/nvim/dein')
   " Salt
   call dein#add('saltstack/salt-vim')
 
-  
+  " Editing
+  call dein#add('jiangmiao/auto-pairs')
+  call dein#add('sudar/comments.vim')
+
   " Python
   call dein#add('klen/python-mode')
   call dein#add('zchee/deoplete-jedi')
